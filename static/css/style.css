@@ -1572,56 +1572,6 @@ p {
   font-size: 0.68rem;
 }
 
-.whatsapp-float {
-  position: fixed;
-  z-index: 80;
-  right: 24px;
-  bottom: 24px;
-  display: flex;
-  width: 62px;
-  height: 62px;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  background: #25d366;
-  box-shadow: 0 13px 34px rgba(10, 44, 30, 0.3);
-  transition: width 220ms ease, border-radius 220ms ease, transform 180ms ease, background-color 180ms ease;
-}
-
-.whatsapp-float:hover {
-  width: 204px;
-  justify-content: flex-start;
-  padding: 0 19px;
-  border-radius: 999px;
-  background: #1db95a;
-  transform: translateY(-3px);
-}
-
-.whatsapp-float svg {
-  width: 32px;
-  height: 32px;
-  flex: 0 0 32px;
-}
-
-.whatsapp-float span {
-  overflow: hidden;
-  width: 0;
-  margin-left: 0;
-  font-size: 0.78rem;
-  font-weight: 800;
-  opacity: 0;
-  white-space: nowrap;
-  transition: width 220ms ease, margin 220ms ease, opacity 180ms ease;
-}
-
-.whatsapp-float:hover span {
-  width: 125px;
-  margin-left: 10px;
-  opacity: 1;
-}
-
 .legal-hero {
   padding: 94px 0 82px;
   background:
@@ -2109,21 +2059,6 @@ p {
     gap: 8px;
   }
 
-  .whatsapp-float,
-  .whatsapp-float:hover {
-    right: 16px;
-    bottom: 16px;
-    width: 58px;
-    height: 58px;
-    justify-content: center;
-    padding: 0;
-    border-radius: 50%;
-  }
-
-  .whatsapp-float span,
-  .whatsapp-float:hover span {
-    display: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

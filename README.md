@@ -13,14 +13,6 @@ python app.py
 
 Open `http://127.0.0.1:5000`.
 
-## WhatsApp configuration
-
-The floating button opens WhatsApp's share/contact picker by default. To send visitors directly to a specific number, set `WHATSAPP_NUMBER` in international format with digits only:
-
-```bash
-export WHATSAPP_NUMBER=15551234567
-```
-
 All purchase buttons use the configured affiliate destination:
 
 `https://getnervecalm.com/dtc/?aff_id=263006`
