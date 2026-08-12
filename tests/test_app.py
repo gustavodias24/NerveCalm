@@ -1,4 +1,5 @@
 import unittest
+from pathlib import Path
 
 from index import AFFILIATE_URL, app
 
@@ -32,6 +33,12 @@ class NerveCalmSiteTests(unittest.TestCase):
         response = self.client.get("/")
         self.assertEqual(response.headers["X-Content-Type-Options"], "nosniff")
         self.assertEqual(response.headers["X-Frame-Options"], "SAMEORIGIN")
+
+    def test_mobile_product_image_keeps_its_natural_height(self):
+        css = Path(app.static_folder, "css", "style.css").read_text(encoding="utf-8")
+        self.assertIn(".hero-product-card > img", css)
+        self.assertIn("height: auto;", css)
+        self.assertIn("width: min(100%, 380px);", css)
 
 
 if __name__ == "__main__":

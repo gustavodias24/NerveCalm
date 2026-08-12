@@ -562,7 +562,9 @@ p {
 }
 
 .hero-product-card > img {
+  display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
@@ -1890,9 +1892,9 @@ p {
   }
 
   .hero-grid {
-    gap: 48px;
-    padding-top: 64px;
-    padding-bottom: 54px;
+    gap: 34px;
+    padding-top: 48px;
+    padding-bottom: 42px;
   }
 
   .hero h1 {
@@ -1914,7 +1916,15 @@ p {
   }
 
   .hero-product-card {
-    width: 100%;
+    width: min(100%, 380px);
+    min-height: 0;
+    justify-self: center;
+  }
+
+  .hero-product-card > .official-product-image {
+    height: auto;
+    min-height: 0;
+    padding: 8px;
   }
 
   .trust-grid {
