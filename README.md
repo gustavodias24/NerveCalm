@@ -8,7 +8,7 @@ A responsive English-language NerveCalm affiliate landing page built with Python
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python app.py
+python index.py
 ```
 
 Open `http://127.0.0.1:5000`.
@@ -20,11 +20,11 @@ All purchase buttons use the configured affiliate destination:
 ## Production
 
 ```bash
-gunicorn app:app
+gunicorn index:app
 ```
 
 Legal and affiliate disclosures are included at `/privacy`, `/terms`, and `/disclaimer`.
 
 ## Image assets
 
-The 15 production images in `static/img/` were generated specifically for this project and optimized to WebP. The site includes a visible disclosure that product, ingredient, lifestyle, and profile imagery is AI-generated for illustration.
+The project includes 15 AI-generated production images plus the supplied official product image, all optimized to WebP. The site includes a visible disclosure explaining that illustrative product, ingredient, lifestyle, and profile imagery may differ from the current retail packaging.

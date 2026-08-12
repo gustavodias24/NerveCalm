@@ -567,6 +567,12 @@ p {
   object-fit: cover;
 }
 
+.hero-product-card > .official-product-image {
+  padding: clamp(8px, 1.5vw, 16px);
+  background: #fff;
+  object-fit: contain;
+}
+
 .product-card-caption {
   display: flex;
   align-items: center;
